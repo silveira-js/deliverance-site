@@ -9,7 +9,7 @@
       content="Deliverance Consulting Ltda — consultoria em tecnologia, engenharia de dados e desenvolvimento de software."
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo-shield.svg" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
     <meta name="theme-color" content="#0a1832" />
 
@@ -31,162 +31,231 @@
     <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="Deliverance Software Consulting — início">
+    <a class="skip-link" href="#top">Ir para o conteúdo</a>
+
+    <header class="titlebar">
+      <div class="container titlebar-inner">
+        <a
+          class="brand"
+          href="#top"
+          aria-label="Deliverance Consulting — início"
+        >
           <img
-            class="brand-logo"
-            src="assets/logo-lockup.png"
-            alt="Deliverance Software Consulting"
-            width="931"
-            height="217"
+            class="brand-mark"
+            src="assets/logo-shield.svg"
+            alt=""
+            width="64"
+            height="64"
           />
+          <span class="brand-type">
+            <strong>Deliverance</strong>
+            <small>Consulting</small>
+          </span>
         </a>
-        <nav class="nav">
-          <a href="#servicos">Serviços</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#contato" class="nav-cta">Contato</a>
+        <p class="crumb" aria-hidden="true">
+          <span class="pulse"></span>
+          ~/deliveranceconsulting.com.br
+        </p>
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="#servicos">servicos_</a>
+          <a href="#sobre">sobre_</a>
+          <a href="#contato" class="nav-cta">contato <span aria-hidden="true">→</span></a>
         </nav>
       </div>
     </header>
 
     <main id="top">
       <section class="hero">
-        <div class="container hero-inner">
-          <p class="eyebrow">Consultoria em tecnologia</p>
-          <h1>
-            Soluções de software e dados para
-            <span class="highlight">decisões melhores</span>
-          </h1>
-          <p class="lead">
-            Ajudamos empresas a projetar, construir e sustentar plataformas
-            digitais — da arquitetura de dados à entrega de aplicações em
-            produção.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contato">Fale com a gente</a>
-            <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="servicos" class="section">
+        <p class="rail" aria-hidden="true">// início</p>
         <div class="container">
-          <h2 class="section-title">Serviços</h2>
-          <p class="section-sub">
-            Atuamos ponta a ponta, do diagnóstico à operação.
+          <p class="comment">// consultoria em tecnologia</p>
+          <h1>
+            Soluções de software<br />
+            e dados para<br />
+            <span class="hl">decisões melhores</span>
+          </h1>
+          <p class="chip">
+            <span aria-hidden="true">&gt;_</span>
+            diagnóstico → arquitetura → operação
           </p>
-
-          <div class="cards">
-            <article class="card">
-              <div class="card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
-                  <path d="M4 7h16M4 12h16M4 17h10" stroke-linecap="round" />
-                </svg>
-              </div>
-              <h3>Engenharia de dados</h3>
-              <p>
-                Pipelines, integrações e modelagem analítica para transformar
-                dados dispersos em informação confiável.
-              </p>
-            </article>
-
-            <article class="card">
-              <div class="card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
-                  <path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13 6l-2 12" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </div>
-              <h3>Desenvolvimento de software</h3>
-              <p>
-                Aplicações web e mobile sob medida, com foco em qualidade,
-                manutenibilidade e prazo.
-              </p>
-            </article>
-
-            <article class="card">
-              <div class="card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
-                  <path d="M12 3v18M5 8l7-5 7 5v8l-7 5-7-5V8z" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </div>
-              <h3>Arquitetura e cloud</h3>
-              <p>
-                Desenho de arquitetura, automação de infraestrutura e boas
-                práticas de segurança em ambientes de nuvem.
-              </p>
-            </article>
+          <div class="hero-foot">
+            <p class="lead">
+              Ajudamos empresas a projetar, construir e sustentar plataformas
+              digitais — da arquitetura de dados à entrega de aplicações em
+              produção.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contato"
+                ><span aria-hidden="true">&gt;_</span> Fale com a gente</a
+              >
+              <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="sobre" class="section section-alt">
-        <div class="container about">
-          <div class="about-text">
-            <h2 class="section-title">Sobre a empresa</h2>
-            <p>
-              A <strong>Deliverance Consulting Ltda</strong> é uma consultoria
-              brasileira de tecnologia. Trabalhamos junto às equipes dos nossos
-              clientes, combinando visão de arquitetura com execução prática
-              para entregar software que sustenta o negócio.
-            </p>
-            <p>
-              Nosso trabalho cobre desde a estruturação de plataformas de dados
-              até o desenvolvimento e a publicação de aplicações para web e
-              dispositivos móveis.
-            </p>
+      <aside class="caps" aria-label="Áreas de atuação">
+        <div class="container caps-inner">
+          <span>&lt;/&gt; backend</span>
+          <span>arquitetura</span>
+          <span>apis</span>
+          <span>cloud</span>
+          <span>dados</span>
+          <span>web</span>
+          <span>mobile</span>
+        </div>
+      </aside>
+
+      <section id="servicos" class="services">
+        <p class="rail" aria-hidden="true">// serviços</p>
+        <div class="container">
+          <header class="block-head">
+            <p class="file">src/servicos</p>
+            <h2>Serviços</h2>
+            <p class="comment">// ponta a ponta, do diagnóstico à operação</p>
+          </header>
+
+          <div class="window">
+            <div class="win-bar" aria-hidden="true">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span>servicos.rs</span>
+            </div>
+            <ol class="source">
+            <li>
+              <span class="ln" aria-hidden="true">01</span>
+              <div class="fn">
+                <h3>
+                  <span class="kw">fn</span> engenharia_de_dados<span class="paren">()</span>
+                </h3>
+                <p>
+                  Pipelines, integrações e modelagem analítica para transformar
+                  dados dispersos em informação confiável.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="ln" aria-hidden="true">02</span>
+              <div class="fn">
+                <h3>
+                  <span class="kw">fn</span> desenvolvimento_de_software<span class="paren">()</span>
+                </h3>
+                <p>
+                  Aplicações web e mobile sob medida, com foco em qualidade,
+                  manutenibilidade e prazo.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="ln" aria-hidden="true">03</span>
+              <div class="fn">
+                <h3>
+                  <span class="kw">fn</span> arquitetura_e_cloud<span class="paren">()</span>
+                </h3>
+                <p>
+                  Desenho de arquitetura, automação de infraestrutura e boas
+                  práticas de segurança em ambientes de nuvem.
+                </p>
+              </div>
+            </li>
+          </ol>
           </div>
-          <ul class="facts">
-            <li>
-              <span class="fact-label">Razão social</span>
-              <span class="fact-value">Deliverance Consulting Ltda</span>
-            </li>
-            <li>
-              <span class="fact-label">Contato</span>
-              <span class="fact-value">
-                <a href="mailto:contato@deliveranceconsulting.com.br"
-                  >contato@<wbr />deliveranceconsulting.com.br</a
-                >
-              </span>
-            </li>
-          </ul>
         </div>
       </section>
 
-      <section id="contato" class="section">
-        <div class="container contact">
-          <h2 class="section-title">Contato</h2>
-          <p class="section-sub">
-            Para propostas, parcerias ou dúvidas, fale com a gente.
-          </p>
-          <a
-            class="contact-card"
-            href="mailto:contato@deliveranceconsulting.com.br"
-          >
-            <span class="contact-label">E-mail</span>
-            <span class="contact-email"
-              >contato@<wbr />deliveranceconsulting.com.br</span
-            >
-          </a>
+      <section id="sobre" class="about-section">
+        <p class="rail" aria-hidden="true">// sobre</p>
+        <div class="container">
+          <header class="block-head">
+            <p class="file">src/sobre</p>
+            <h2>Sobre a empresa</h2>
+          </header>
+
+          <div class="about">
+            <div class="about-text">
+              <p class="about-open">
+                A <strong>Deliverance Consulting Ltda</strong> é uma consultoria
+                brasileira de tecnologia.
+              </p>
+              <p>
+                Trabalhamos junto às equipes dos nossos clientes, combinando
+                visão de arquitetura com execução prática para entregar software
+                que sustenta o negócio.
+              </p>
+              <p>
+                Nosso trabalho cobre desde a estruturação de plataformas de
+                dados até o desenvolvimento e a publicação de aplicações para
+                web e dispositivos móveis.
+              </p>
+            </div>
+
+            <dl class="spec">
+              <div class="spec-bar">
+                <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                entity.json
+              </div>
+              <div class="spec-row">
+                <dt>razao_social</dt>
+                <dd>"Deliverance Consulting Ltda"</dd>
+              </div>
+              <div class="spec-row">
+                <dt>contato</dt>
+                <dd>
+                  <a href="mailto:contato@deliveranceconsulting.com.br"
+                    >"contato@<wbr />deliveranceconsulting.com.br"</a
+                  >
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="file">src/contato</p>
+            <h2>Contato</h2>
+            <p class="comment">
+              // propostas, parcerias ou dúvidas — fale com a gente
+            </p>
+            <p class="prompt">
+              <span class="prompt-prefix" aria-hidden="true">$</span>
+              <a href="mailto:contato@deliveranceconsulting.com.br"
+                >mail contato@<wbr />deliveranceconsulting.com.br</a
+              ><span class="caret" aria-hidden="true"></span>
+            </p>
+          </div>
+
+          <div class="contact-mark" aria-hidden="true">
+            <img src="assets/logo-shield.svg" alt="" width="64" height="64" />
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div class="footer-brand">
+    <footer class="statusbar">
+      <div class="container statusbar-inner">
+        <a class="brand brand-foot" href="#top">
           <img
-            class="footer-logo"
-            src="assets/logo-lockup.png"
-            alt="Deliverance Software Consulting"
-            width="931"
-            height="217"
+            class="brand-mark"
+            src="assets/logo-shield.svg"
+            alt=""
+            width="64"
+            height="64"
           />
-          <p class="footer-legal"><strong>Deliverance Consulting Ltda</strong></p>
-        </div>
-        <p class="footer-copy">
-          &copy; <span id="year">2026</span> Deliverance Consulting Ltda. Todos
-          os direitos reservados.
+          <span class="brand-type">
+            <strong>Deliverance</strong>
+            <small>Consulting</small>
+          </span>
+        </a>
+        <p class="status-meta">
+          <span>main</span>
+          <span>utf-8</span>
+          <span>© <span id="year">2026</span></span>
+        </p>
+        <p class="status-legal">
+          <span class="prompt-prefix">deliverance@consulting:~$</span>
+          Deliverance Consulting Ltda
         </p>
       </div>
     </footer>

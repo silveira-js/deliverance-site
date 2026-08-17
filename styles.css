@@ -136,9 +136,9 @@ a:focus-visible {
 
 .titlebar-inner {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr auto auto;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
   min-height: 72px;
 }
 
@@ -240,6 +240,29 @@ a:focus-visible {
   background: var(--yellow);
   transform: translate(2px, 2px);
   box-shadow: 1px 1px 0 var(--ink);
+}
+
+.lang {
+  display: flex;
+  margin: 0;
+  border: var(--border) solid var(--ink);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.lang a {
+  padding: 6px 10px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.lang a[aria-current="page"] {
+  background: var(--lime);
+}
+
+.lang a:hover {
+  background: var(--yellow);
 }
 
 /* Hero — uma calha, sem imagem ao lado */
@@ -709,14 +732,83 @@ a:focus-visible {
   font-weight: 500;
 }
 
+/* Página Josué */
+
+.bio {
+  padding: 72px 0 96px;
+}
+
+.bio-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.portrait-win {
+  margin: 0;
+  background: var(--card);
+  border: var(--border) solid var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.portrait-win img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bio-kicker {
+  margin: 0 0 12px;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.bio h1 {
+  margin: 0 0 18px;
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+
+.bio-lead {
+  margin: 0 0 20px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.bio-copy p {
+  margin: 0 0 14px;
+  font-weight: 500;
+}
+
+.bio-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.cv {
+  padding: 0 0 96px;
+}
+
 /* Responsivo */
 
 @media (max-width: 900px) {
-  .titlebar-inner,
+  .titlebar-inner {
+    grid-template-columns: auto 1fr auto;
+  }
+
   .statusbar-inner,
   .hero-foot,
   .about,
-  .contact-grid {
+  .contact-grid,
+  .bio-grid {
     grid-template-columns: 1fr;
   }
 
@@ -746,7 +838,7 @@ a:focus-visible {
     font-size: 13px;
   }
 
-  .nav a:not(.nav-cta) {
+  .nav a:not(.nav-cta):not(.nav-keep) {
     display: none;
   }
 
